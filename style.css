@@ -1,0 +1,347 @@
+@font-face {
+    font-family:'MyFont';
+    src: url('oddval/oddval-extrabold.otf');
+    src: url('oddval/oddval-black.otf');
+    /* src: url('oddval/HostGrotesk.ttf');
+    src: url('oddval/oddval-medium.otf'); */
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url('oddval/HostGrotesk.ttf');
+}
+
+@font-face {
+    font-family:'MyFont3';
+    src: url('oddval/Oddval-SemiBold.ttf');
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: 1px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.title1{
+    font-family: 'MyFont2' , HostGrotesk;
+    font-weight: 1000;
+    font-size: 17px;
+    line-height: 15px;
+    padding-left: 20px;
+}
+.nav{
+    display: flex;
+    margin:18px;
+    margin-bottom: 10px;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0.13em solid rgba(44, 44, 44, 0.329);
+    border-radius: 10px;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+
+.insidetext{
+    padding-left: 230px;
+}
+
+.navtext{
+    font-family: 'MyFont2' , HostGrotesk;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    transition:ease-out 0.2s;
+}
+
+.navtext:hover{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(230, 103, 0);
+    
+}
+.search{
+    
+    display: flex;
+    padding-right: 18px;
+    justify-self: center;
+    align-self: center;
+}
+
+.inp{
+    background-image:url(search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 18px;
+    background-color: rgba(22, 22, 22, 0.89);
+    margin: 0px 10px 0px 4px ;
+    border: 0;
+    background-color: rgba(219, 219, 219, 0.39);
+    height: 35px;
+    border-radius: 30px;
+    padding-left: 35px;
+}
+.inp:focus{
+    outline: none;
+}
+
+#p1::placeholder{
+    font-family: Calibri;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(141, 141, 141, 0.534);
+}
+
+
+.img1{
+    width: 22px;
+    margin: 0px 4px 0px 4px ;
+}
+.img2{
+    width: 22px;
+    margin: 0px 4px 2px 4px ;
+}
+
+.title {
+    padding-left: 18px;
+
+}
+.navtext{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+
+.container{
+    display: grid;
+    height: 51rem;
+    margin-left: 16px;
+    margin-right: 16px;
+    grid-template-rows:1fr 1fr 1.5fr;
+    grid-template-columns:1fr 1fr 0.5fr 1fr;
+
+}
+.item1{
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr ;
+    grid-template-columns:200px 1fr 1fr 1fr 1fr  ;
+    padding: 30px;
+    grid-row: 1 / 3 ;
+    grid-column:1 / 3 ;
+    background-color: rgb(219, 218, 214);
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.arrow{
+    grid-row:1/2 ;
+    grid-column: 2/4;
+    width: 250px;
+    height:30px ;
+    margin-top: 6px;
+    justify-content: center;
+    align-self: center;
+}
+.item2{
+    display: flex;
+    padding: 30px;
+    grid-row: 3 / 3 ;
+    grid-column:1 / 2 ;
+    background-color: rgb(178, 178, 178);
+    margin: 5px;
+    border-radius: 30px;
+    background-image: url('d6931ff713b383fea51d9a84c6b9f44e-removebg-preview.png');
+    background-size:auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.item3{
+    display: flex;
+    padding: 30px;
+    grid-row: 3 / 3 ;
+    grid-column:2 / 3 ;
+    background-color: rgb(193, 110, 60);
+    margin: 5px;
+    border-radius: 30px;
+    background-image: url('8cd632ac83601dcb98ac0728e9a297a7.jpg');
+    /* background-size: contain; */
+    background-size: 550px;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+.item4{
+    display: flex;
+    padding: 30px;
+    grid-row: 1 / 4 ;
+    grid-column:3 / 5 ;
+    background-image: url(Creative\ portrait\ photo\ idea.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 850px;
+    /* background-position: -450px -190px; */
+    background-position: center -240px;
+    margin: 5px;
+    border-radius: 30px;
+    position: relative;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+
+
+
+
+.p1{
+    font-family: 'MyFont' , oddval-extrabold;
+    font-size: 70px;
+    line-height:70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    grid-column: 1/4 ;
+    grid-row:1/4 ;
+}
+
+.p2{
+    grid-column: 1/5 ;
+    grid-row:4/5 ;
+    padding-left: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: 'MyFont2' , HostGrotesk;
+    font-weight: 500;
+}
+
+.pflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.p3{
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'MyFont3' , oddval-semibold;
+    font-size: 35px;
+    color: rgb(250, 250, 250);
+    
+}
+
+.p4{
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'MyFont3' , oddval-semibold;
+    font-size: 35px;
+    color: rgb(250, 250, 250);
+    
+}
+
+
+/* learn more button */
+.contact{
+    display: flex;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: rgb(211, 211, 211, 0.329);
+    background-color: rgba(211, 211, 211, 0.329);
+    height: 46px;
+    width: 200px;
+    justify-content: space-around;
+    
+}
+.contact4{
+    margin-left: 10px;
+    align-self: center;
+    font-family: 'MyFont2' , HostGrotesk;
+    font-size: 15em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.dbutton{
+    border: 0;
+    border-radius: 50px;
+    height:35px ;
+    width: 35px;
+    margin-top: 3px;
+    margin-left: 42px;
+    background-color: rgba(0, 0, 0, 0.76);
+    
+}
+
+.imglm{
+    width: 35px;
+    fill: rgb(255, 255, 255);
+    filter: invert();
+}
+
+/* contact us button */
+.contact1{
+    display: flex;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: rgb(248, 248, 248);
+    margin-left: 10px;
+    height: 46px;
+    width: 200px;
+    justify-content: space-around;
+    
+}
+.contact2{
+    margin-left: 10px;
+    align-self: center;
+    font-family: 'MyFont2' , HostGrotesk;
+    font-size: 15em;
+    font-weight: 500;
+    color: aliceblue;
+}
+.dbutton1{
+    border: 0;
+    border-radius: 50px;
+    height:35px ;
+    width: 35px;
+    margin-top: 3px;
+    margin-left: 42px;
+    background-color: rgba(231, 255, 253, 0.815);
+}
+
+.imgc{
+    width: 25px;
+    fill: rgb(255, 255, 255);
+    
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 47%;
+    left: 63%;
+    border: 1px solid rgba(255, 255, 255, 0.795);
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    
+}
+
+.p5{
+    font-family: 'MyFont2' , HostGrotesk;
+    line-height: 15px;
+    font-weight: 500;
+    font-size: 14em;
+    color: white;
+    
+    
+}
